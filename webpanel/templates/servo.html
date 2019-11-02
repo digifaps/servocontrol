@@ -1,0 +1,30 @@
+<html>
+   <body>
+      <form action = "{{ url_for('addrec') }}" method = "POST">
+         <h3>Servo config</h3>
+         Servo_Id<br>
+         <input type="number" name="serv_id" min="1" max="16" /></br>
+
+         
+         deg_min<br>
+         <input type="number" name="deg_min" min="1" max="180" /></br>
+
+         
+         deg_max<br>
+         <input type="number" name="deg_max" min="1" max="180" /></br>
+
+         
+         sleep_min<br>
+         <input type="number" name="sleep_min" min="1" max="600" /></br>
+
+
+         sleep_max<br>
+         <input type="number" name="sleep_max" min="1" max="600" /></br>
+
+         extra<br>
+         <textarea name = "extra" ></textarea><br>
+
+         <input type = "submit" value = "submit" /><br>
+      </form>
+   </body>
+</html>
